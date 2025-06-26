@@ -1,0 +1,18 @@
+cat > Домашние_животные.txt
+cat > Вьючные_животные.txt
+cat Домашние_животные.txt Вьючные_животные.txt > Все_животные.txt
+cat Все_животные.txt
+mv Все_животные.txt Друзья_человека.txt
+mkdir питомник
+mv Друзья_человека.txt питомник/
+sudo apt install wget
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.22-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.22-1_all.deb
+sudo apt update
+sudo apt install mysql-server
+wget http://ftp.debian.org/debian/pool/main/s/sl/sl_5.02-1+b1_amd64.deb
+sudo dpkg -i sl_5.02-1+b1_amd64.deb
+sl
+sudo dpkg -r sl
+sudo mysql -u root -p
+history > history_commands.txt
